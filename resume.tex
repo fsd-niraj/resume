@@ -1,0 +1,270 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{soul}
+\input{glyphtounicode}
+\usepackage[margin=0.5in]{geometry}
+
+%----------FONT OPTIONS----------
+\usepackage[default]{sourcesanspro}
+% \setmain
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\color{highlight}
+}{}{0em}{}[\color{highlight}\titlerule \vspace{-4pt}]
+
+\pdfgentounicode=1
+\def\spaceforrole{ }
+
+\newcommand{\sectionspace}{
+\vspace{-20pt}
+}
+
+\newcommand{\subheadingtitlevspace}{
+\vspace{-3pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{#1 \vspace{-1pt}} \\
+}
+
+\newcommand{\titleItem}[2]{
+\vspace{2.5pt}
+  \textbf{#1:} &$\space$ \text{#2} \\
+}
+
+\newcommand{\experienceTitleAndDate}[2]{
+\item
+  \textbf{#1} & \hfill  {#2}
+}
+
+\newcommand{\experienceCompAndLoc}[2]{
+\item
+  {#1} & \hfill  \textit{#2}
+}
+
+\newcommand{\highlight}[1]{
+  \textsl{\textbf{#1}}
+}
+
+\newcommand{\resumeProjectHeading}[4]{
+    \item
+    \vspace{2pt}
+    \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+        \textbf{#1} | \textnormal{#2} : \textit{#3} & \href{#4}{\color{highlight}Link} \\
+    \end{tabular*}\vspace{-20pt}
+    \vspace{0pt}
+}
+
+\newcommand{\resumeExpHeadingNew}[2]{
+\vspace{2px}
+    \item
+    \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+        \textbf{#1} & {#2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeExpSubHead}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+        \textit{#1} & \textit{#2} \\
+    \end{tabular*}\vspace{-20pt}
+}
+
+\newcommand{\educationTitleSec}[4]{
+    \item
+\vspace{2.5pt}
+    \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+        \textbf{#1} -- \textit{\textbf{#2}}, \textit{#3} & {#4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}
+{
+\subheadingtitlevspace
+\begin{itemize}[leftmargin=0.00in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}
+{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{
+\begin{itemize}[leftmargin=10pt]}
+\newcommand{\resumeItemListEnd}{
+\end{itemize}\vspace{-8pt}} % -8pt %
+
+\newcommand{\Certifications}[2]{
+    \item
+    \textbf{#1}: \textit{#2}
+}
+
+\definecolor{highlight}{RGB}{29, 78, 216}
+
+\def\jobLocationMumbai{Mumbai, MH, India}
+\def\jobLocationToronto{Toronto, ON, Canada}
+
+\def\jobTitle{Software Engineer}
+
+\hypersetup{
+    pdfauthor={Niraj Panchal},
+    pdftitle={\jobTitle},
+    pdfsubject={\jobTitle 's Resume},
+    pdfkeywords={Javascript, Typescript, Python, Swift, Java, Go, C++, HTML, CSS, SASS, 
+    Node.js, React, VueJS, Angular, Springboot, Express,
+    SQL, NoSQL, MongoDB, Redis, DynamoDB, PostgreSQL,
+    Websockets, HTTP, OAuth. REST, API, GraphQL, TCP, RabbitMQ, Kafka
+    AWS, Heroku, Jenkins, GCP, Docker, Kubernets
+    CI/CD, Git, GitHub, Testing, Jest, Postman, DevOps, DevSecOps,
+    Agile, Scrum, Kanban, monitoring system, Grafana, Loki, Prometheus
+    problem solving, data structures and algorithms, system design
+    },
+    pdfproducer={\LaTeX},
+    pdfcreator={Visual Studio Code}
+}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \color{highlight}{\textbf{Niraj Panchal}}} \\
+    \vspace{5pt}
+    \href{https://linkedin.com/in/nirajp247}{{\textit{LinkedIn}}} $|$
+    \href{email@gmail.com}{{\textit{email@gmail.com}}} $|$ 
+    \href{tel:+10000000000}{{\textit{+1 (000) 000-0000}}} $|$
+    \href{https://github.com/fsd-niraj}{{\textit{Github}}} $|$
+    % \href{https://leetcode.com/u/fsd-niraj/}{{\textit{LeetCode}}} $|$
+    % \href{https://leetcode.com/u/fsd-niraj/}{{\textit{Medium}}} $|$
+    % \href{https://fsd-niraj.github.io/sde-portfolio/}{{\textit{Portfolio}}} $|$
+    \textit{\jobLocationToronto}
+    \vspace{-8pt}
+\end{center}
+
+\section{Skills}
+\subheadingtitlevspace
+ \begin{itemize}[leftmargin=0.00in, label={}]
+    {\item{
+ \begin{tabularx}{\linewidth}{@{}l X@{}}
+     \titleItem{Tools}{Git, GitHub, GitLab, Postman, Docker, Kubernetes, Jest}
+     \titleItem{Technologies}{SQL, NoSQL, Cloud, Grafana, Redis, Kafka, SocketIO}
+     \titleItem{Languages}{TypeScript, JavaScript, Swift, Java, Python, Bash}
+     \titleItem{Frameworks}{React, Redux, Next.js, Angular, Node.js, Express, Sails}
+     % \titleItem{Protocols}{WebSockets, HTTP, RESTful, TCP, UDP, OAuth}
+     % \titleItem{Techniques}{Microservices, CI/CD, OOPs, SOLID and ACID Principles, Agile}
+\end{tabularx}
+    }}
+ \end{itemize}
+\sectionspace
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeExpHeadingNew{Software Developer}{Dec 2020 -- Dec 2022}
+        \resumeExpSubHead{Expertrons}{\jobLocationMumbai}
+          \resumeItemListStart
+            \resumeItem{Integrated Sentry for client-side logs monitoring, helping identify and resolve bugs faster by 2 times.}
+            \resumeItem{Led database optimization efforts, achieving a 40\% performance boost for app-wide APIs.}
+            \resumeItem{Implemented Redis Caching system which reduced the latency by 75\%.}
+            \resumeItem{Created and maintained 4 major test documentation, including test plans, test cases, and test reports of the Web Application.}
+            \resumeItem{Participated in architectural discussions and provided technical solutions to improve system scalability and reliability.}
+            \resumeItem{Developed a service that transfers client's data into the sales and business team’s portal on time.}
+            \resumeItem{Recognized as a Q1 Star Performer.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+% \sectionspace
+
+
+\section{Projects}
+  \resumeSubHeadingListStart
+  
+    \resumeProjectHeading{POS System}{Web App}{React, Redux, Tailwind, Nodejs, MongoDB, Redis, JWT, Vite}{https://github.com/fsd-niraj/cashMate}
+          \resumeItemListStart
+                \resumeItem{Designed and implemented a POS system, optimized for small-scale, offline operations to ensure fast and reliable transaction processing.}
+                \resumeItem{Integrated a responsive user interface with Redux for state management, improving cashier efficiency and reducing transaction times in a local environment.}
+           \resumeItemListEnd
+
+    \resumeProjectHeading{Server Observability System}{Web, Desktop}{Grafana, Prometheus, Loki, Nodejs, Express, Docker}{https://github.com/fsd-niraj/server-Observability-System}
+        \resumeItemListStart
+            \resumeItem{Collected metrics like methods, route, status code, time of an API and a specific route with the help of Prometheus.}
+            \resumeItem{Efficiently visualized the collected data in Grafana and collected logs using Grafana Loki.}
+       \resumeItemListEnd 
+       
+    \resumeProjectHeading{NFT Visualization}{Cross Platform (Android, iOS)}{React Native, Styled Components, Expo}{https://github.com/fsd-niraj/nft_app}
+          \resumeItemListStart
+                \resumeItem{Developed a cross-platform NFT app using React Native, helping users get a detailed view of their portfolio and leaderboard.}
+           \resumeItemListEnd
+           
+    \resumeProjectHeading{Centralised Crypto Exchange}{Web App}{Next.js, Prisma, Postgresql, solana-Web3}{https://github.com/fsd-niraj/SecureXchange}
+          \resumeItemListStart
+                \resumeItem{Coded a centralized crypto exchange platform, allowing a user to swap and stake their crypto in a very secure way.}
+           \resumeItemListEnd
+
+    \resumeProjectHeading{DNS Server}{Software}{Typescript, Git, CLI}{https://github.com/fsd-niraj/dns-server}
+        \resumeItemListStart
+            \resumeItem{An MVP of a DNS Server capable of handling questions and providing answers while maintaining request records.}
+       \resumeItemListEnd
+       
+    \resumeProjectHeading{Admin Dashboard}{Web App}{React, Redux, TypeScript, Material UI}{Link}
+        \resumeItemListStart
+            \resumeItem{Designed and developed a comprehensive frontend dashboard using React and Redux for state management.}
+            \resumeItem{Optimized for a mobile-first experience, improving accessibility and user satisfaction.}
+       \resumeItemListEnd
+       
+    \resumeProjectHeading{Mars Image viewer}{iOS}{ Swift, X-Code, MVC}{https://github.com/fsd-niraj/mars-image-viewer}
+        \resumeItemListStart
+            \resumeItem{Replaced JSON data with Google Maps API and made more than 1000 locations available to search.}
+            \resumeItem{Ranked first in the class with additional functionality over other students.}
+       \resumeItemListEnd
+        
+  \resumeSubHeadingListEnd
+% \sectionspace
+
+\section{Certifications}
+\subheadingtitlevspace
+ \begin{itemize}[leftmargin=0.00in, label={}]
+    {\item{
+ \begin{tabularx}{\linewidth}{@{}l X@{}}
+  \titleItem{Hacker Rank}{JavaScript, Nodejs, React}
+  \titleItem{Microsoft}{Cyber \& Mobile Security}
+  \titleItem{Uni. of Michigan}{Python (Analytics \& AI)}
+\end{tabularx}
+    }}
+ \end{itemize}
+\sectionspace
+
+\section{Education}
+  \resumeSubHeadingListStart
+  \educationTitleSec{Post graduate in Web \& Cloud Design and Development}{Humber College}{\jobLocationToronto}{April 2024}
+  \educationTitleSec{Post graduate in Enterprise Software Development}{Humber College}{\jobLocationToronto}{Aug 2023}
+  \educationTitleSec{Bachelor of Computer Application}{YCMOU}{\jobLocationMumbai}{June 2020}
+  \resumeSubHeadingListEnd
+% \sectionspace
+
+\section{Publications}
+   \begin{itemize}[leftmargin=0.00in, label={}]
+    {\item{
+ \begin{tabularx}{\linewidth}{@{}l X@{}}
+  \titleItem{Medium Blogs}{\href{https://medium.com/@fsd-niraj}{\color{highlight}https://medium.com/@fsd-niraj}}
+\end{tabularx}
+    }}
+ \end{itemize}
+% \sectionspace
+
+\end{document}
